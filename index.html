@@ -1,12 +1,12 @@
-<pre><code class="language-html">&#x3C;!DOCTYPE html>
-&#x3C;html lang="fr">
-&#x3C;head>
-    &#x3C;meta charset="UTF-8">
-    &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
-    &#x3C;title>Omar Zergui - Ingénieur Méthodes en Industrie&#x3C;/title>
-    &#x3C;script src="https://cdn.tailwindcss.com">&#x3C;/script>
-    &#x3C;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&#x26;display=swap" rel="stylesheet">
-    &#x3C;style>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Zergui - Ingénieur Méthodes en Industrie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
         body { font-family: 'Inter', sans-serif; }
         .hero-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
         .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
@@ -14,632 +14,382 @@
         .smooth-scroll { scroll-behavior: smooth; }
         .business-gradient { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); }
         .contact-form { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
-    &#x3C;/style>
-&#x3C;/head>
-&#x3C;body class="smooth-scroll">
-    &#x3C;!-- Navigation -->
-    &#x3C;nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        &#x3C;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            &#x3C;div class="flex justify-between items-center h-16">
-                &#x3C;div class="flex items-center">
-                    &#x3C;div class="flex-shrink-0">
-                        &#x3C;h1 class="text-2xl font-bold text-indigo-600">Omar Zergui&#x3C;/h1>
-                        &#x3C;p class="text-xs text-gray-500">Ingénieur Méthodes&#x3C;/p>
-                    &#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="hidden md:block">
-                    &#x3C;div class="ml-10 flex items-baseline space-x-4">
-                        &#x3C;a href="#accueil" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Accueil&#x3C;/a>
-                        &#x3C;a href="#services" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services&#x3C;/a>
-                        &#x3C;a href="#bureaux-etudes" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Bureaux d'Études&#x3C;/a>
-                        &#x3C;a href="#portfolio" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Portfolio&#x3C;/a>
-                        &#x3C;a href="#apropos" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">À propos&#x3C;/a>
-                        &#x3C;a href="#contact" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact&#x3C;/a>
-                    &#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="md:hidden">
-                    &#x3C;button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
-                        &#x3C;svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        &#x3C;/svg>
-                    &#x3C;/button>
-                &#x3C;/div>
-            &#x3C;/div>
-        &#x3C;/div>
-        &#x3C;!-- Menu mobile -->
-        &#x3C;div id="mobile-menu" class="md:hidden hidden">
-            &#x3C;div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-                &#x3C;a href="#accueil" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Accueil&#x3C;/a>
-                &#x3C;a href="#services" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Services&#x3C;/a>
-                &#x3C;a href="#bureaux-etudes" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Bureaux d'Études&#x3C;/a>
-                &#x3C;a href="#portfolio" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Portfolio&#x3C;/a>
-                &#x3C;a href="#apropos" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">À propos&#x3C;/a>
-                &#x3C;a href="#contact" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Contact&#x3C;/a>
-            &#x3C;/div>
-        &#x3C;/div>
-    &#x3C;/nav>
+    </style>
+</head>
+<body class="smooth-scroll">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-indigo-600">Omar Zergui</h1>
+                        <p class="text-xs text-gray-500">Ingénieur Méthodes</p>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#accueil" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Accueil</a>
+                        <a href="#services" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="#portfolio" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Portfolio</a>
+                        <a href="#apropos" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">À propos</a>
+                        <a href="#contact" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="#accueil" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                <a href="#services" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
+                <a href="#apropos" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">À propos</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    &#x3C;!-- Hero Section -->
-    &#x3C;section id="accueil" class="business-gradient text-white pt-16">
-        &#x3C;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-            &#x3C;div class="text-center">
-                &#x3C;div class="mb-8">
-                    &#x3C;div class="inline-block bg-white bg-opacity-20 rounded-full px-4 py-2 text-sm font-medium mb-4">
+    <!-- Hero Section -->
+    <section id="accueil" class="business-gradient text-white pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <div class="mb-8">
+                    <div class="inline-block bg-white bg-opacity-20 rounded-full px-4 py-2 text-sm font-medium mb-4">
                         ✨ Autoentrepreneur certifié
-                    &#x3C;/div>
-                &#x3C;/div>
-                &#x3C;h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
                     Omar Zergui
-                &#x3C;/h1>
-                &#x3C;p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-                    Formation &#x26; Optimisation industrielle - Amélioration continue &#x26; Performance
-                &#x3C;/p>
-                &#x3C;div class="space-x-4">
-                    &#x3C;a href="#services" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                        Découvrir mes formations
-                    &#x3C;/a>
-                    &#x3C;a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors">
-                        Diagnostic gratuit
-                    &#x3C;/a>
-                &#x3C;/div>
-            &#x3C;/div>
-        &#x3C;/div>
-    &#x3C;/section>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                    Ingénieur Méthodes en Industrie - Plus de 20 ans d'expérience terrain
+                </p>
+                <div class="space-x-4">
+                    <a href="#services" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Découvrir mes services
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors">
+                        Me contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    &#x3C;!-- Services Section -->
-    &#x3C;section id="services" class="py-20 bg-gray-50">
-        &#x3C;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            &#x3C;div class="text-center mb-16">
-                &#x3C;h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Mes Services &#x26; Formations&#x3C;/h2>
-                &#x3C;p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Formation professionnelle et optimisation de vos processus industriels
-                &#x3C;/p>
-            &#x3C;/div>
-            &#x3C;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                &#x3C;div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    &#x3C;div class="text-indigo-600 mb-4">
-                        &#x3C;svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        &#x3C;/svg>
-                    &#x3C;/div>
-                    &#x3C;h3 class="text-xl font-semibold mb-4">Analyse &#x26; Organisation des Flux&#x3C;/h3>
-                    &#x3C;p class="text-gray-600 mb-4">
-                        Analyse complète et réorganisation de vos flux de production pour améliorer la productivité.
-                    &#x3C;/p>
-                    &#x3C;div class="text-sm text-gray-500 mb-4">
-                        • Cartographie des flux&#x3C;br>
-                        • Identification des goulots&#x3C;br>
-                        • Optimisation des circuits
-                    &#x3C;/div>
-                    &#x3C;div class="text-indigo-600 font-semibold">Sur devis&#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    &#x3C;div class="text-indigo-600 mb-4">
-                        &#x3C;svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                            &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        &#x3C;/svg>
-                    &#x3C;/div>
-                    &#x3C;h3 class="text-xl font-semibold mb-4">Optimisation Méthodes de Travail&#x3C;/h3>
-                    &#x3C;p class="text-gray-600 mb-4">
-                        Amélioration des méthodes de travail en atelier pour réduire les pertes et accélérer les délais.
-                    &#x3C;/p>
-                    &#x3C;div class="text-sm text-gray-500 mb-4">
-                        • Étude des postes de travail&#x3C;br>
-                        • Réduction des gaspillages&#x3C;br>
-                        • Standardisation des opérations
-                    &#x3C;/div>
-                    &#x3C;div class="text-indigo-600 font-semibold">Sur devis&#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    &#x3C;div class="text-indigo-600 mb-4">
-                        &#x3C;svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                        &#x3C;/svg>
-                    &#x3C;/div>
-                    &#x3C;h3 class="text-xl font-semibold mb-4">Projets &#x26; Dossiers ANDI&#x3C;/h3>
-                    &#x3C;p class="text-gray-600 mb-4">
-                        Gestion et réalisation de projets industriels, développement de dossiers ANDI.
-                    &#x3C;/p>
-                    &#x3C;div class="text-sm text-gray-500 mb-4">
-                        • Gestion de projets&#x3C;br>
-                        • Étude et développement ANDI&#x3C;br>
-                        • Suivi et réalisation
-                    &#x3C;/div>
-                    &#x3C;div class="text-indigo-600 font-semibold">Sur devis&#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    &#x3C;div class="text-indigo-600 mb-4">
-                        &#x3C;svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        &#x3C;/svg>
-                    &#x3C;/div>
-                    &#x3C;h3 class="text-xl font-semibold mb-4">Formation Personnel&#x3C;/h3>
-                    &#x3C;p class="text-gray-600 mb-4">
-                        Formation ciblée du personnel aux méthodes d'amélioration continue.
-                    &#x3C;/p>
-                    &#x3C;div class="text-sm text-gray-500 mb-4">
-                        • Formation 5S&#x3C;br>
-                        • Initiation Lean Manufacturing&#x3C;br>
-                        • Méthodes Kaizen
-                    &#x3C;/div>
-                    &#x3C;div class="text-indigo-600 font-semibold">Sur devis&#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    &#x3C;div class="text-indigo-600 mb-4">
-                        &#x3C;svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                        &#x3C;/svg>
-                    &#x3C;/div>
-                    &#x3C;h3 class="text-xl font-semibold mb-4">Suivi Indicateurs Performance&#x3C;/h3>
-                    &#x3C;p class="text-gray-600 mb-4">
-                        Mise en place et suivi des indicateurs de performance pour fiabiliser vos livraisons.
-                    &#x3C;/p>
-                    &#x3C;div class="text-sm text-gray-500 mb-4">
-                        • Tableaux de bord&#x3C;br>
-                        • KPI production&#x3C;br>
-                        • Reporting qualité
-                    &#x3C;/div>
-                    &#x3C;div class="text-indigo-600 font-semibold">Sur devis&#x3C;/div>
-                &#x3C;/div>
-            &#x3C;/div>
-        &#x3C;/div>
-    &#x3C;/section>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Mes Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Solutions industrielles et optimisation de production
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md card-hover">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Étude d'installations</h3>
+                    <p class="text-gray-600 mb-4">
+                        Étude et installation d'unités de production adaptées à vos besoins industriels.
+                    </p>
+                    <div class="text-sm text-gray-500 mb-4">
+                        • Analyse technique complète<br>
+                        • Dimensionnement optimal<br>
+                        • Installation clé en main
+                    </div>
+                    <div class="text-indigo-600 font-semibold">Sur devis</div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md card-hover">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Montage & Mise en service</h3>
+                    <p class="text-gray-600 mb-4">
+                        Montage mécanique et mise en service technique de vos équipements industriels.
+                    </p>
+                    <div class="text-sm text-gray-500 mb-4">
+                        • Montage mécanique précis<br>
+                        • Tests et mise en service<br>
+                        • Formation des équipes
+                    </div>
+                    <div class="text-indigo-600 font-semibold">Sur devis</div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md card-hover">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Optimisation & ANDI</h3>
+                    <p class="text-gray-600 mb-4">
+                        Organisation des flux, optimisation des méthodes et constitution de dossiers ANDI.
+                    </p>
+                    <div class="text-sm text-gray-500 mb-4">
+                        • Optimisation des flux<br>
+                        • Amélioration des méthodes<br>
+                        • Dossiers ANDI complets
+                    </div>
+                    <div class="text-indigo-600 font-semibold">Sur devis</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    &#x3C;!-- Section Bureaux d'Études -->
-    &#x3C;section id="bureaux-etudes" class="py-20 bg-indigo-50">
-        &#x3C;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            &#x3C;div class="text-center mb-16">
-                &#x3C;h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Collaboration avec Bureaux d'Études&#x3C;/h2>
-                &#x3C;p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Partenaire terrain pour vos projets d'optimisation industrielle et d'intervention technique
-                &#x3C;/p>
-            &#x3C;/div>
-            
-            &#x3C;div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-                &#x3C;div>
-                    &#x3C;h3 class="text-2xl font-bold text-gray-800 mb-6">Votre Partenaire Terrain&#x3C;/h3>
-                    &#x3C;p class="text-lg text-gray-600 mb-6">
-                        Avec plus de &#x3C;strong>20 ans d'expérience&#x3C;/strong> dans la gestion de production et l'organisation industrielle, 
-                        j'accompagne les bureaux d'études dans la &#x3C;strong>mise en œuvre concrète&#x3C;/strong> de leurs projets techniques.
-                    &#x3C;/p>
-                    &#x3C;div class="bg-white p-6 rounded-lg shadow-md">
-                        &#x3C;h4 class="font-semibold text-indigo-800 mb-4">🎯 Mon rôle d'appui terrain&#x3C;/h4>
-                        &#x3C;div class="space-y-2 text-sm text-gray-700">
-                            &#x3C;div>• &#x3C;strong>Diagnostic industriel&#x3C;/strong> et analyse terrain&#x3C;/div>
-                            &#x3C;div>• &#x3C;strong>Accompagnement&#x3C;/strong> phases d'étude et réalisation&#x3C;/div>
-                            &#x3C;div>• &#x3C;strong>Soutien&#x3C;/strong> à la mise en œuvre des projets techniques&#x3C;/div>
-                            &#x3C;div>• &#x3C;strong>Contribution&#x3C;/strong> aux dossiers d'études (schémas, logistique, ANDI)&#x3C;/div>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="bg-white p-8 rounded-lg shadow-lg">
-                    &#x3C;h4 class="text-xl font-semibold text-gray-800 mb-6">Expertise Secteurs&#x3C;/h4>
-                    &#x3C;div class="grid grid-cols-2 gap-4">
-                        &#x3C;div class="text-center p-4 bg-blue-50 rounded-lg">
-                            &#x3C;div class="text-3xl mb-2">⚙️&#x3C;/div>
-                            &#x3C;div class="text-sm font-medium">Usinage&#x3C;/div>
-                        &#x3C;/div>
-                        &#x3C;div class="text-center p-4 bg-green-50 rounded-lg">
-                            &#x3C;div class="text-3xl mb-2">🔧&#x3C;/div>
-                            &#x3C;div class="text-sm font-medium">Transformation métallique&#x3C;/div>
-                        &#x3C;/div>
-                        &#x3C;div class="text-center p-4 bg-purple-50 rounded-lg">
-                            &#x3C;div class="text-3xl mb-2">❄️&#x3C;/div>
-                            &#x3C;div class="text-sm font-medium">Entrepôts frigorifiques&#x3C;/div>
-                        &#x3C;/div>
-                        &#x3C;div class="text-center p-4 bg-orange-50 rounded-lg">
-                            &#x3C;div class="text-3xl mb-2">🏭&#x3C;/div>
-                            &#x3C;div class="text-sm font-medium">Production manufacturière&#x3C;/div>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                &#x3C;/div>
-            &#x3C;/div>
-
-            &#x3C;!-- Objectifs de la collaboration -->
-            &#x3C;div class="mb-12 bg-gradient-to-r from-indigo-50 to-purple-50 p-8 rounded-lg">
-                &#x3C;h3 class="text-2xl font-bold text-gray-800 mb-6">🎯 Objectifs de la collaboration&#x3C;/h3>
-                &#x3C;div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    &#x3C;div class="space-y-3">
-                        &#x3C;div class="flex items-start">
-                            &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Étude et organisation de production&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-start">
-                            &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Calculs techniques et chiffrage&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-start">
-                            &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Évaluation des coûts et prix de revient&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-start">
-                            &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Accompagnement au lancement de nouveaux projets&#x3C;/span>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;div class="space-y-3">
-                        &#x3C;div class="flex items-start">
-                            &#x3C;div class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Préparation et suivi complet des dossiers ANDI jusqu'à l'obtention effective&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-start">
-                            &#x3C;div class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Pilotage du changement et accompagnement en phase d'étude&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-start">
-                            &#x3C;div class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Analyse des diagnostics terrain (production, organisation)&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-start">
-                            &#x3C;div class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Identification des goulots d'étranglement et axes d'amélioration&#x3C;/span>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                &#x3C;/div>
-            &#x3C;/div>
-
-            &#x3C;!-- Modalités d'intervention -->
-            &#x3C;div class="mt-12 bg-white p-8 rounded-lg shadow-lg">
-                &#x3C;h3 class="text-xl font-semibold text-gray-800 mb-6">📋 Modalités d'intervention&#x3C;/h3>
-                &#x3C;div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                    &#x3C;div>
-                        &#x3C;h4 class="font-semibold text-indigo-800 mb-4">🔄 Types de missions&#x3C;/h4>
-                        &#x3C;div class="space-y-3 text-sm text-gray-700">
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Missions ponctuelles&#x3C;/strong> ou continues, selon les besoins du projet&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Suivi et pilotage&#x3C;/strong> des phases critiques (démarrage, test, redéploiement)&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Coordination&#x3C;/strong> avec les équipes du bureau d'études et les opérateurs&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Élaboration&#x3C;/strong> de rapports synthétiques et recommandations opérationnelles&#x3C;/span>
-                            &#x3C;/div>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;div>
-                        &#x3C;h4 class="font-semibold text-green-800 mb-4">💡 Mon engagement&#x3C;/h4>
-                        &#x3C;div class="bg-green-50 p-4 rounded-lg">
-                            &#x3C;p class="text-sm text-gray-700 mb-3">
-                                Avant toute mission, je propose un &#x3C;strong>échange gratuit, sans engagement&#x3C;/strong>, 
-                                afin de bien cerner vos attentes et les contours du projet.
-                            &#x3C;/p>
-                            &#x3C;div class="space-y-2 text-sm text-green-700">
-                                &#x3C;div>• &#x3C;strong>Évaluation&#x3C;/strong> des besoins réels&#x3C;/div>
-                                &#x3C;div>• &#x3C;strong>Détermination&#x3C;/strong> des premiers axes d'action&#x3C;/div>
-                                &#x3C;div>• &#x3C;strong>Base claire&#x3C;/strong> pour une éventuelle collaboration&#x3C;/div>
-                            &#x3C;/div>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                &#x3C;/div>
-                
-                &#x3C;div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    &#x3C;div>
-                        &#x3C;h3 class="text-xl font-semibold text-gray-800 mb-4">📍 Zone d'Intervention&#x3C;/h3>
-                        &#x3C;div class="space-y-3">
-                            &#x3C;div class="flex items-center">
-                                &#x3C;svg class="w-5 h-5 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                &#x3C;/svg>
-                                &#x3C;span>&#x3C;strong>Base :&#x3C;/strong> Boumerdes, Algérie&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-center">
-                                &#x3C;svg class="w-5 h-5 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 9m0 8V9m0 0H9" />
-                                &#x3C;/svg>
-                                &#x3C;span>&#x3C;strong>Couverture :&#x3C;/strong> Régions avoisinantes&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-center">
-                                &#x3C;svg class="w-5 h-5 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                                &#x3C;/svg>
-                                &#x3C;span>&#x3C;strong>Contact :&#x3C;/strong> WhatsApp &#x26; Viber disponibles&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-center">
-                                &#x3C;svg class="w-5 h-5 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                                &#x3C;/svg>
-                                &#x3C;span>&#x3C;strong>Disponibilité :&#x3C;/strong> Rencontre ou échange professionnel&#x3C;/span>
-                            &#x3C;/div>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;div>
-                        &#x3C;h3 class="text-xl font-semibold text-gray-800 mb-4">✅ Pourquoi me choisir ?&#x3C;/h3>
-                        &#x3C;div class="space-y-3 text-sm text-gray-600">
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Expérience terrain :&#x3C;/strong> 20+ ans dans la gestion de production&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Vision pratique :&#x3C;/strong> Approche concrète et réalisable&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Polyvalence :&#x3C;/strong> Secteurs industriels variés&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Réactivité :&#x3C;/strong> Intervention rapide et flexible&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Coordination :&#x3C;/strong> Équipes bureaux d'études et opérateurs&#x3C;/span>
-                            &#x3C;/div>
-                            &#x3C;div class="flex items-start">
-                                &#x3C;div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0">&#x3C;/div>
-                                &#x3C;span>&#x3C;strong>Suivi ANDI :&#x3C;/strong> Jusqu'à l'obtention effective des avantages&#x3C;/span>
-                            &#x3C;/div>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                &#x3C;/div>
-            &#x3C;/div>
-        &#x3C;/div>
-    &#x3C;/section>
-
-    &#x3C;!-- Portfolio Section -->
-    &#x3C;section id="portfolio" class="py-20 bg-white">
-        &#x3C;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            &#x3C;div class="text-center mb-16">
-                &#x3C;h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Portfolio&#x3C;/h2>
-                &#x3C;p class="text-xl text-gray-600 max-w-2xl mx-auto">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Quelques réalisations qui illustrent mon expertise
-                &#x3C;/p>
-            &#x3C;/div>
-            &#x3C;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                &#x3C;div class="bg-gray-50 rounded-lg overflow-hidden shadow-md card-hover">
-                    &#x3C;div class="h-48 bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
-                        &#x3C;div class="text-white text-2xl font-bold">Projet 1&#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;div class="p-6">
-                        &#x3C;h3 class="text-xl font-semibold mb-2">SARL ROBISAN - Fabrication Serrures&#x3C;/h3>
-                        &#x3C;p class="text-gray-600 mb-4">Lancement d'une unité de fabrication et assemblage des serrures de porte (Mai 2022 - Sept 2023)&#x3C;/p>
-                        &#x3C;span class="inline-block bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Management Projet&#x3C;/span>
-                    &#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="bg-gray-50 rounded-lg overflow-hidden shadow-md card-hover">
-                    &#x3C;div class="h-48 bg-gradient-to-br from-green-400 to-blue-600 flex items-center justify-center">
-                        &#x3C;div class="text-white text-2xl font-bold">INALCA&#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;div class="p-6">
-                        &#x3C;h3 class="text-xl font-semibold mb-2">INALCA ALGERIE - Agroalimentaire&#x3C;/h3>
-                        &#x3C;p class="text-gray-600 mb-4">Direction engineering pour entreprise algéro-italienne spécialisée dans la découpe et conditionnement de viande (Mai 2017 - Sept 2020)&#x3C;/p>
-                        &#x3C;span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Direction Engineering&#x3C;/span>
-                    &#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="bg-gray-50 rounded-lg overflow-hidden shadow-md card-hover">
-                    &#x3C;div class="h-48 bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center">
-                        &#x3C;div class="text-white text-2xl font-bold">MOBIVILLE&#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;div class="p-6">
-                        &#x3C;h3 class="text-xl font-semibold mb-2">SPA Mobiville - Mobilier Urbain&#x3C;/h3>
-                        &#x3C;p class="text-gray-600 mb-4">Responsable de production pour entreprise de fabrication de mobiliers urbains (Oct 2020 - Sept 2021)&#x3C;/p>
-                        &#x3C;span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Production&#x3C;/span>
-                    &#x3C;/div>
-                &#x3C;/div>
-            &#x3C;/div>
-        &#x3C;/div>
-    &#x3C;/section>
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
+                        <div class="text-white text-2xl font-bold">Projet 1</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Installation unité textile</h3>
+                        <p class="text-gray-600 mb-4">Installation complète d'une unité de production textile avec optimisation des flux.</p>
+                        <span class="inline-block bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Installation</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-600 flex items-center justify-center">
+                        <div class="text-white text-2xl font-bold">Projet 2</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Optimisation agroalimentaire</h3>
+                        <p class="text-gray-600 mb-4">Réorganisation des méthodes et amélioration de la productivité d'une unité agroalimentaire.</p>
+                        <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Optimisation</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center">
+                        <div class="text-white text-2xl font-bold">Projet 3</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Dossier ANDI</h3>
+                        <p class="text-gray-600 mb-4">Constitution complète d'un dossier ANDI pour une PME manufacturière.</p>
+                        <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">ANDI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    &#x3C;!-- À propos Section -->
-    &#x3C;section id="apropos" class="py-20 bg-gray-50">
-        &#x3C;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            &#x3C;div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                &#x3C;div>
-                    &#x3C;h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">À propos de moi&#x3C;/h2>
-                    &#x3C;div class="bg-green-50 p-6 rounded-lg mb-6 border-l-4 border-green-500">
-                        &#x3C;h3 class="text-lg font-semibold text-green-800 mb-2">🎯 Objectifs visés&#x3C;/h3>
-                        &#x3C;div class="text-sm text-green-700 space-y-1">
-                            &#x3C;div>• Améliorer la productivité de vos lignes de production&#x3C;/div>
-                            &#x3C;div>• Réduire les pertes et valoriser les ressources existantes&#x3C;/div>
-                            &#x3C;div>• Diminuer les coûts sans compromettre la qualité&#x3C;/div>
-                            &#x3C;div>• Accélérer les délais et fiabiliser vos livraisons&#x3C;/div>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;p class="text-lg text-gray-600 mb-6">
-                        &#x3C;strong>Auto-entrepreneur enregistré&#x3C;/strong> - Ingénieur Méthodes en Industrie avec plus de 20 ans d'expérience 
-                        dans la gestion de production et le &#x3C;strong>pilotage de projets&#x3C;/strong>. Spécialisé en &#x3C;strong>formation&#x3C;/strong>, 
-                        &#x3C;strong>optimisation&#x3C;/strong> et &#x3C;strong>partenariat bureaux d'études&#x3C;/strong>.
-                    &#x3C;/p>
-                    &#x3C;div class="space-y-4 mb-6">
-                        &#x3C;div class="flex items-center">
-                            &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mr-3">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">20+ ans dans la gestion de production industrielle&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-center">
-                            &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mr-3">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Expérience managériale confirmée&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-center">
-                            &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mr-3">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Expertise secteurs variés : mécanique, métallurgie, agroalimentaire&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-center">
-                            &#x3C;div class="w-2 h-2 bg-indigo-600 rounded-full mr-3">&#x3C;/div>
-                            &#x3C;span class="text-gray-700">Spécialiste Lean Management et optimisation&#x3C;/span>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;div class="bg-blue-50 p-4 rounded-lg mb-6">
-                        &#x3C;h4 class="font-semibold text-blue-800 mb-2">🎯 Mon engagement - Diagnostic gratuit de 30 minutes&#x3C;/h4>
-                        &#x3C;div class="text-sm text-blue-700">
-                            • Observation terrain ciblée&#x3C;br>
-                            • Analyse des blocages&#x3C;br>
-                            • Recommandations personnalisées&#x3C;br>
-                            • Plan d'intervention adapté&#x3C;br>
-                            • &#x3C;strong>Sans engagement&#x3C;/strong>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;div class="grid grid-cols-2 gap-4">
-                        &#x3C;div class="text-center bg-white p-4 rounded-lg">
-                            &#x3C;div class="text-2xl font-bold text-indigo-600">20+&#x3C;/div>
-                            &#x3C;div class="text-gray-600 text-sm">Années d'expérience&#x3C;/div>
-                        &#x3C;/div>
-                        &#x3C;div class="text-center bg-white p-4 rounded-lg">
-                            &#x3C;div class="text-2xl font-bold text-indigo-600">5+&#x3C;/div>
-                            &#x3C;div class="text-gray-600 text-sm">Secteurs industriels&#x3C;/div>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="text-center">
-                    &#x3C;div class="w-80 h-80 mx-auto bg-white rounded-lg shadow-lg flex items-center justify-center mb-6 overflow-hidden">
-                        &#x3C;img src="assets/carte-autoentrepreneur.jpg" alt="Carte d'autoentrepreneur Omar Zergui" class="w-full h-full object-cover" />
-                    &#x3C;/div>
-                    &#x3C;div class="bg-white p-6 rounded-lg shadow-md">
-                        &#x3C;h3 class="text-xl font-semibold mb-2">Statut Légal&#x3C;/h3>
-                        &#x3C;p class="text-gray-600 mb-4">
-                            Auto-entrepreneur enregistré - Ingénieur Méthodes en Industrie
-                        &#x3C;/p>
-                        &#x3C;div class="text-sm text-gray-500">
-                            • N° d'enregistrement: 107304260100525837&#x3C;br>
-                            • Délivré le: 11/06/2025&#x3C;br>
-                            • Valable jusqu'au: 10/06/2030&#x3C;br>
-                            • Territoire national couvert
-                        &#x3C;/div>
-                    &#x3C;/div>
-                &#x3C;/div>
-            &#x3C;/div>
-        &#x3C;/div>
-    &#x3C;/section>
+    <!-- À propos Section -->
+    <section id="apropos" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">À propos de moi</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Ingénieur Méthodes en Industrie avec plus de 20 ans d'expérience terrain, autoentrepreneur 
+                        agréé auprès de l'Agence Nationale de l'Autoentrepreneur. Je mets mon expertise au service 
+                        des entreprises industrielles pour optimiser leur production et leurs processus.
+                    </p>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Plus de 20 ans d'expérience terrain</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Autoentrepreneur agréé officiellement</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Intervention sur tout le territoire national</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Sérieux, efficacité et résultats garantis</span>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                        <h4 class="font-semibold text-blue-800 mb-2">🎯 Pré-diagnostic gratuit de 30 minutes</h4>
+                        <div class="text-sm text-blue-700">
+                            • Observation rapide sur site ou à distance<br>
+                            • Identification des besoins clés<br>
+                            • Premières recommandations concrètes<br>
+                            • Sans engagement
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center bg-white p-4 rounded-lg">
+                            <div class="text-2xl font-bold text-indigo-600">20+</div>
+                            <div class="text-gray-600 text-sm">Années d'expérience</div>
+                        </div>
+                        <div class="text-center bg-white p-4 rounded-lg">
+                            <div class="text-2xl font-bold text-indigo-600">100%</div>
+                            <div class="text-gray-600 text-sm">Territoire national</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="w-80 h-80 mx-auto bg-white rounded-lg shadow-lg flex items-center justify-center mb-6 overflow-hidden">
+                        <img src="a5ogwCohJEdFof3InVo7f" alt="Carte d'autoentrepreneur Omar Zergui" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Autoentrepreneur agréé</h3>
+                        <p class="text-gray-600 mb-4">
+                            Agréé auprès de l'Agence Nationale de l'Autoentrepreneur - Algérie
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            • Activité: Ingénieur Méthodes en Industrie<br>
+                            • NIN: 109731206010050001<br>
+                            • Valide jusqu'au 10.06.2030
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    &#x3C;!-- Contact Section -->
-    &#x3C;section id="contact" class="py-20 contact-form">
-        &#x3C;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            &#x3C;div class="text-center mb-16">
-                &#x3C;h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contactez-moi&#x3C;/h2>
-                &#x3C;p class="text-xl text-gray-600 max-w-2xl mx-auto">
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 contact-form">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contactez-moi</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Prêt à démarrer votre projet ? Discutons de vos besoins et obtenez un devis personnalisé.
-                &#x3C;/p>
-            &#x3C;/div>
-            &#x3C;div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                &#x3C;div class="bg-white p-8 rounded-lg shadow-md">
-                    &#x3C;h3 class="text-xl font-semibold mb-6">Informations de contact&#x3C;/h3>
-                    &#x3C;div class="space-y-4">
-                        &#x3C;div class="flex items-center">
-                            &#x3C;svg class="w-6 h-6 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            &#x3C;/svg>
-                            &#x3C;span class="text-gray-700">omarzer2000@yahoo.fr&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-center">
-                            &#x3C;svg class="w-6 h-6 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            &#x3C;/svg>
-                            &#x3C;span class="text-gray-700">0554916792&#x3C;/span>
-                        &#x3C;/div>
-                        &#x3C;div class="flex items-center">
-                            &#x3C;svg class="w-6 h-6 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                &#x3C;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            &#x3C;/svg>
-                            &#x3C;span class="text-gray-700">Algérie - Territoire national&#x3C;/span>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                    &#x3C;div class="mt-8">
-                        &#x3C;h4 class="font-semibold mb-4">Horaires de disponibilité&#x3C;/h4>
-                        &#x3C;div class="text-sm text-gray-600 space-y-1">
-                            &#x3C;div>Disponible 7j/7&#x3C;/div>
-                            &#x3C;div>Intervention terrain ou à distance&#x3C;/div>
-                            &#x3C;div>Pré-diagnostic gratuit: 30 minutes&#x3C;/div>
-                        &#x3C;/div>
-                    &#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div class="bg-white p-8 rounded-lg shadow-md">
-                    &#x3C;h3 class="text-xl font-semibold mb-6">Demande de devis&#x3C;/h3>
-                    &#x3C;form id="contact-form" class="space-y-4">
-                        &#x3C;div>
-                            &#x3C;label class="block text-sm font-medium text-gray-700 mb-2">Nom complet&#x3C;/label>
-                            &#x3C;input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                        &#x3C;/div>
-                        &#x3C;div>
-                            &#x3C;label class="block text-sm font-medium text-gray-700 mb-2">Email&#x3C;/label>
-                            &#x3C;input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
-                        &#x3C;/div>
-                        &#x3C;div>
-                            &#x3C;label class="block text-sm font-medium text-gray-700 mb-2">Téléphone&#x3C;/label>
-                            &#x3C;input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                        &#x3C;/div>
-                        &#x3C;div>
-                            &#x3C;label class="block text-sm font-medium text-gray-700 mb-2">Type de service&#x3C;/label>
-                            &#x3C;select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                                &#x3C;option>Analyse et organisation des flux&#x3C;/option>
-                                &#x3C;option>Optimisation méthodes de travail&#x3C;/option>
-                                &#x3C;option>Formation 5S&#x3C;/option>
-                                &#x3C;option>Formation Lean Manufacturing&#x3C;/option>
-                                &#x3C;option>Formation Kaizen&#x3C;/option>
-                                &#x3C;option>Dossier ANDI&#x3C;/option>
-                                &#x3C;option>Suivi indicateurs performance&#x3C;/option>
-                                &#x3C;option>Diagnostic gratuit 30 minutes&#x3C;/option>
-                                &#x3C;option>Autre&#x3C;/option>
-                            &#x3C;/select>
-                        &#x3C;/div>
-                        &#x3C;div>
-                            &#x3C;label class="block text-sm font-medium text-gray-700 mb-2">Budget estimé&#x3C;/label>
-                            &#x3C;select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                                &#x3C;option>Moins de 500€&#x3C;/option>
-                                &#x3C;option>500€ - 1000€&#x3C;/option>
-                                &#x3C;option>1000€ - 2500€&#x3C;/option>
-                                &#x3C;option>Plus de 2500€&#x3C;/option>
-                            &#x3C;/select>
-                        &#x3C;/div>
-                        &#x3C;div>
-                            &#x3C;label class="block text-sm font-medium text-gray-700 mb-2">Description du projet&#x3C;/label>
-                            &#x3C;textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Décrivez votre projet, vos besoins et vos objectifs...">&#x3C;/textarea>
-                        &#x3C;/div>
-                        &#x3C;button type="submit" class="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700 transition-colors font-semibold">
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6">Informations de contact</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span class="text-gray-700">omarzer2000@yahoo.fr</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span class="text-gray-700">0554916792</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span class="text-gray-700">Algérie - Territoire national</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Horaires de disponibilité</h4>
+                        <div class="text-sm text-gray-600 space-y-1">
+                            <div>Disponible 7j/7</div>
+                            <div>Intervention terrain ou à distance</div>
+                            <div>Pré-diagnostic gratuit: 30 minutes</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6">Demande de devis</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nom complet</label>
+                            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
+                            <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Type de service</label>
+                            <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <option>Étude d'installation</option>
+                                <option>Montage mécanique</option>
+                                <option>Optimisation des flux</option>
+                                <option>Dossier ANDI</option>
+                                <option>Conseil technique</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Budget estimé</label>
+                            <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <option>Moins de 500€</option>
+                                <option>500€ - 1000€</option>
+                                <option>1000€ - 2500€</option>
+                                <option>Plus de 2500€</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Description du projet</label>
+                            <textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Décrivez votre projet, vos besoins et vos objectifs..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700 transition-colors font-semibold">
                             Envoyer la demande
-                        &#x3C;/button>
-                    &#x3C;/form>
-                &#x3C;/div>
-            &#x3C;/div>
-        &#x3C;/div>
-    &#x3C;/section>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    &#x3C;!-- Footer -->
-    &#x3C;footer class="bg-gray-800 text-white py-12">
-        &#x3C;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            &#x3C;div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                &#x3C;div>
-                    &#x3C;h3 class="text-xl font-bold mb-4">Omar Zergui&#x3C;/h3>
-                    &#x3C;p class="text-gray-400 mb-4">Ingénieur Méthodes en Industrie - Autoentrepreneur agréé&#x3C;/p>
-                    &#x3C;div class="text-sm text-gray-400">
-                        N° d'enregistrement: 107304260100525837&#x3C;br>
-                        Valable jusqu'au: 10/06/2030&#x3C;br>
-                        Spécialité: Formation &#x26; Optimisation industrielle
-                    &#x3C;/div>
-                &#x3C;/div>
-                &#x3C;div>
-                    &#x3C;h4 class="font-semibold mb-4">Services&#x3C;/h4>
-                    &#x3C;ul class="space-y-2 text-gray-400">
-                        &#x3C;li>&#x3C;a href="#services" class="hover:text-white transition-colors">Analyse des flux&#x3C;/a>&#x3C;/li>
-                        &#x3C;li>&#x3C;a href="#services" class="hover:text-white transition-colors">Formation 5S/Lean/Kaizen&#x3C;/a>&#x3C;/li>
-                        &#x3C;li>&#x3C;a href="#services" class="hover:text-white transition-colors">Optimisation méthodes&#x3C;/a>&#x3C;/li>
-                        &#x3C;li>&#x3C;a href="#services" class="hover:text-white transition-colors">Indicateurs performance&#x3C;/a>&#x3C;/li>
-                    &#x3C;/ul>
-                &#x3C;/div>
-                &#x3C;div>
-                    &#x3C;h4 class="font-semibold mb-4">Contact&#x3C;/h4>
-                    &#x3C;div class="space-y-2 text-gray-400">
-                        &#x3C;div>omarzer2000@yahoo.fr&#x3C;/div>
-                        &#x3C;div>0554916792&#x3C;/div>
-                        &#x3C;div>Algérie - Territoire national&#x3C;/div>
-                    &#x3C;/div>
-                &#x3C;/div>
-            &#x3C;/div>
-            &#x3C;div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                &#x3C;p>&#x26;copy; 2024 Omar Zergui - Auto-entrepreneur enregistré - Formation &#x26; Optimisation industrielle. Tous droits réservés.&#x3C;/p>
-            &#x3C;/div>
-        &#x3C;/div>
-    &#x3C;/footer>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Omar Zergui</h3>
+                    <p class="text-gray-400 mb-4">Ingénieur Méthodes en Industrie - Autoentrepreneur agréé</p>
+                    <div class="text-sm text-gray-400">
+                        NIN: 109731206010050001<br>
+                        Activité: Ingénieur Méthodes en Industrie
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Étude d'installations</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Montage mécanique</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Optimisation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Dossiers ANDI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <div>omarzer2000@yahoo.fr</div>
+                        <div>0554916792</div>
+                        <div>Algérie - Territoire national</div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Omar Zergui - Ingénieur Méthodes en Industrie. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 
-    &#x3C;script type="module">
+    <script type="module">
         // Menu mobile
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -693,7 +443,6 @@
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
         });
-    &#x3C;/script>
-&#x3C;/body>
-&#x3C;/html>
-</code></pre>
+    </script>
+</body>
+</html>
